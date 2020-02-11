@@ -1,60 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,700|Seymour+One&display=swap');
 
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito';
-}
-
-body {
-    background: #EBF1F3;
-    height: 100vh;
 }
 
 .container {
-    padding: 2em;
+    width: 95%;
+    margin: 0 auto;
+}
+h1, p {
+    font-size: 1em;
 }
 h1 {
-    font-size: 1.2em;
-    margin: .3em 0;
+    margin: 2em 0 -.2em;
+    font-family: 'Seymour One', sans-serif;
 }
-p.subheading {
-    margin-top: 0;
-    margin-bottom: 2em;
-}
-.color-container {
+section {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: repeat(3,auto);
     grid-gap: 1em;
+    margin-top: 2em;
 }
-.color {
-    border: 1px solid #B8C8CE;
-    padding: 1em 1em 0;
+.card {
+    background-color: #eeeeee;
+    padding: 1.7em;
+}
+blockquote {
+    margin: 0;
 }
 span {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     display: block;
+    background: gray;
     border-radius: 50%;
+    margin: 0 auto;
 }
-.color:nth-of-type(1) span { background: purple; }
-.color:nth-of-type(2) span { background: goldenrod; }
-.color:nth-of-type(3) span { background: magenta; }
-.color:nth-of-type(4) span { background: blue; }
-.color:nth-of-type(5) span { background: darkblue; }
-.color:nth-of-type(6) span { background: lightseagreen; }
-
-p.code {
-    font-size: .8em;
-    margin-bottom: 0;
-    margin-top: .8em;
-}
-p.desc {
-    margin-bottom: 0;
-    background: #DAE7EB;
-    margin: 1em -1em 0;
-    padding: 1em;
+cite {
+    font-style: normal;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
 }
 
-/* Overwrites */
 
+h1, p, blockquote p, cite {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-size: 2em;
+}
+
+blockquote p {
+    line-height: 1.5em;
+}
+
+cite {
+    font-size: .7em;
+    font-weight: bold;
+    color: #373737;
+}
